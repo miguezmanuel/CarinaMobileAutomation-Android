@@ -11,12 +11,25 @@ public class AutomationExerciseSliderCarousel extends AbstractUIObject {
     @FindBy(xpath = "//ol/li[1]")
     private ExtendedWebElement leftSliderControl;
 
+    @FindBy(xpath = "//div[@id='slider-carousel']/div/div[3]/div[1]/h1")
+    private ExtendedWebElement automationExerciseTitle;
+
+    @FindBy(xpath = "//div[@id='slider-carousel']/div/div[3]/div[1]/a[1]/button")
+    private ExtendedWebElement testCasesButton;
+
     public AutomationExerciseSliderCarousel(WebDriver driver, SearchContext searchContext) {
         super(driver, searchContext);
     }
 
     public boolean isLeftSliderControlVisible () {
-
         return leftSliderControl.isVisible();
+    }
+
+    public boolean isTitleVisible () {
+        return automationExerciseTitle.isVisible();
+    }
+
+    public boolean isTestCasesButtonVisible () {
+        return testCasesButton.isVisible();
     }
 }

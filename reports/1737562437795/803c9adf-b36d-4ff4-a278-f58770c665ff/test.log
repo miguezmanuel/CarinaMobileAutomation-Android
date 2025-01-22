@@ -1,16 +1,11 @@
-[2025-01-20 12:06:14] [1] [WARN] Reporting disabled: using no op test run registrar
-[2025-01-20 12:06:14] [1] [INFO] TEST [carinaandroidautomation - test [L01]] STARTED at [09:06:14 2025-01-20]
-[2025-01-20 12:06:14] [1] [INFO] Starting driver session...
-[2025-01-20 12:06:20] [1] [INFO] Driver session started.
-[2025-01-20 12:06:20] [1] [INFO] URL 'https://automationexercise.com/' opened
-[2025-01-20 12:06:22] [1] [INFO] Checking if the homepage is visible successfully
-[2025-01-20 12:06:44] [1] [ERROR] TEST [carinaandroidautomation - test [L01]] FAILED at [09:06:44 2025-01-20] - expected [true] but found [false]
+[2025-01-22 04:13:59] [1] [WARN] Reporting disabled: using no op test run registrar
+[2025-01-22 04:13:59] [1] [INFO] TEST [carinaandroidautomation - testFailureLogin] STARTED at [13:13:59 2025-01-22]
+[2025-01-22 04:13:59] [1] [INFO] Starting driver session...
+[2025-01-22 04:14:04] [1] [INFO] Driver session started.
+[2025-01-22 04:14:05] [1] [ERROR] TEST [carinaandroidautomation - testFailureLogin] FAILED at [13:14:05 2025-01-22] - There is no any class that satisfy to required conditions: [parent class - com.solvd.carina.demo.mobile.swaglabs.common.LoginPageBase], [device type - ANDROID_PHONE]
 
-org.testng.Assert.fail(Assert.java:110)
-org.testng.Assert.failNotEquals(Assert.java:1577)
-org.testng.Assert.assertTrue(Assert.java:56)
-org.testng.Assert.assertTrue(Assert.java:66)
-com.solvd.carina.demo.mobile.AutomationExerciseTest.test(WebAutomationExerciseTest.java:30)
+com.zebrunner.carina.utils.factory.ICustomTypePageFactory.initPage(ICustomTypePageFactory.java:145)
+com.solvd.carina.demo.mobile.SampleTest.testFailureLogin(SampleTest.java:20)
 java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 java.base/java.lang.reflect.Method.invoke(Method.java:580)
 org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)

@@ -1,16 +1,19 @@
-[2025-01-20 12:06:14] [1] [WARN] Reporting disabled: using no op test run registrar
-[2025-01-20 12:06:14] [1] [INFO] TEST [carinaandroidautomation - test [L01]] STARTED at [09:06:14 2025-01-20]
-[2025-01-20 12:06:14] [1] [INFO] Starting driver session...
-[2025-01-20 12:06:20] [1] [INFO] Driver session started.
-[2025-01-20 12:06:20] [1] [INFO] URL 'https://automationexercise.com/' opened
-[2025-01-20 12:06:22] [1] [INFO] Checking if the homepage is visible successfully
-[2025-01-20 12:06:44] [1] [ERROR] TEST [carinaandroidautomation - test [L01]] FAILED at [09:06:44 2025-01-20] - expected [true] but found [false]
+[2025-01-22 06:35:03] [1] [WARN] Reporting disabled: using no op test run registrar
+[2025-01-22 06:35:03] [1] [INFO] TEST [carinaandroidautomation - loginTest] STARTED at [15:35:03 2025-01-22]
+[2025-01-22 06:35:03] [1] [INFO] Starting driver session...
+[2025-01-22 06:35:08] [1] [INFO] Driver session started.
+[2025-01-22 06:35:09] [1] [ERROR] TEST [carinaandroidautomation - loginTest] FAILED at [15:35:09 2025-01-22] - Implement appropriate AbstractUIObject constructor for auto-initialization!
 
-org.testng.Assert.fail(Assert.java:110)
-org.testng.Assert.failNotEquals(Assert.java:1577)
-org.testng.Assert.assertTrue(Assert.java:56)
-org.testng.Assert.assertTrue(Assert.java:66)
-com.solvd.carina.demo.mobile.AutomationExerciseTest.test(WebAutomationExerciseTest.java:30)
+com.zebrunner.carina.webdriver.decorator.ExtendedFieldDecorator.proxyForAbstractUIObject(ExtendedFieldDecorator.java:149)
+com.zebrunner.carina.webdriver.decorator.ExtendedFieldDecorator.decorate(ExtendedFieldDecorator.java:87)
+org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:111)
+org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:103)
+com.zebrunner.carina.webdriver.gui.AbstractUIObject.<init>(AbstractUIObject.java:84)
+com.zebrunner.carina.webdriver.gui.AbstractUIObject.<init>(AbstractUIObject.java:66)
+com.zebrunner.carina.webdriver.gui.AbstractPage.<init>(AbstractPage.java:57)
+com.solvd.carina.demo.mobile.swaglabs.common.SwagLabsBasePage.<init>(SwagLabsBasePage.java:26)
+com.solvd.carina.demo.mobile.swaglabs.pages.SwagLabsLoginPage.<init>(SwagLabsLoginPage.java:15)
+com.solvd.carina.demo.mobile.SwagLabsTest.loginTest(SwagLabsTest.java:21)
 java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 java.base/java.lang.reflect.Method.invoke(Method.java:580)
 org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
