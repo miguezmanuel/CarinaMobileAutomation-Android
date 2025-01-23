@@ -1,0 +1,57 @@
+[2025-01-23 02:01:01] [1] [WARN] Reporting disabled: using no op test run registrar
+[2025-01-23 02:01:01] [1] [INFO] TEST [carinaandroidautomation - loginTest] STARTED at [11:01:01 2025-01-23]
+[2025-01-23 02:01:01] [1] [INFO] Starting driver session...
+[2025-01-23 02:01:05] [1] [INFO] Driver session started.
+[2025-01-23 02:01:05] [1] [INFO] checking title present
+[2025-01-23 02:01:05] [1] [INFO] INFO: opening url 'https://www.saucedemo.com/v1/'
+[2025-01-23 02:01:05] [1] [INFO] entering credentials
+[2025-01-23 02:01:26] [1] [ERROR] FAIL: type - waitCondition for element 'usernameInputField (By.xpath: //input[@name='user-name'])' not satisfied!
+[2025-01-23 02:01:26] [1] [ERROR] TEST [carinaandroidautomation - loginTest] FAILED at [11:01:26 2025-01-23] - no such element By.xpath: //div[@id='login_button_container']
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.7.0', revision: '0a5b49d16f'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.2', java.version: '21.0.4'
+Driver info: driver.version: unknown
+
+com.zebrunner.carina.webdriver.locator.ExtendedElementLocator.findElement(ExtendedElementLocator.java:157)
+org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+jdk.proxy2/jdk.proxy2.$Proxy89.getWrappedDriver(Unknown Source)
+io.appium.java_client.pagefactory.utils.WebDriverUnpackUtility.unpackWebDriverFromSearchContext(WebDriverUnpackUtility.java:55)
+io.appium.java_client.pagefactory.utils.WebDriverUnpackUtility.getCurrentContentType(WebDriverUnpackUtility.java:83)
+com.zebrunner.carina.webdriver.locator.ExtendedElementLocator.getBy(ExtendedElementLocator.java:132)
+com.zebrunner.carina.webdriver.locator.ExtendedElementLocator.findElement(ExtendedElementLocator.java:146)
+org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+jdk.proxy2/jdk.proxy2.$Proxy89.clear(Unknown Source)
+com.zebrunner.carina.webdriver.decorator.ExtendedWebElement$3.doType(ExtendedWebElement.java:1596)
+com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.executeAction(ExtendedWebElement.java:1430)
+com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.overrideAction(ExtendedWebElement.java:1531)
+com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.doAction(ExtendedWebElement.java:1510)
+com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.type(ExtendedWebElement.java:620)
+com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.type(ExtendedWebElement.java:609)
+com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.type(ExtendedWebElement.java:599)
+com.solvd.carina.demo.mobile.swaglabs.components.SwagLabsLoginForm.typeUsernameInputField(SwagLabsLoginForm.java:33)
+com.solvd.carina.demo.mobile.SwagLabsTest.loginTest(SwagLabsTest.java:34)
+java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+java.base/java.lang.reflect.Method.invoke(Method.java:580)
+org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+org.testng.TestRunner.privateRun(TestRunner.java:829)
+org.testng.TestRunner.run(TestRunner.java:602)
+org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+org.testng.SuiteRunner.run(SuiteRunner.java:330)
+org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+org.testng.TestNG.runSuites(TestNG.java:1099)
+org.testng.TestNG.run(TestNG.java:1067)
+com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)

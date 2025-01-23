@@ -7,7 +7,7 @@ import org.openqa.selenium.support.FindBy;
 
 public class SwagLabsBasePage extends AbstractPage {
 
-    @FindBy(xpath = "//div[@class='login_wrapper-inner']")
+    @FindBy(xpath = "//div[@id='login_button_container']")
     private SwagLabsLoginForm LoginForm;
     @FindBy(xpath = "//div[@class='header_label']")
     private SwagLabsHeader Header;

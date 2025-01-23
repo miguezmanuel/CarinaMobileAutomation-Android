@@ -27,17 +27,16 @@ public class SwagLabsItemPage extends SwagLabsBasePage {
         super(driver);
     }
 
-    public SwagLabsInventoryContainer clickBackToProductsButton () {
-        backToProductsButton.click();
-        return new SwagLabsInventoryContainer(getDriver());
-    }
-
     public boolean isBackToProductsButtonClickable () {
         return addToCartButton.isClickable();
     }
 
     public void clickAddToCartButton () {
         addToCartButton.click();
+    }
+
+    public void clickBackToProductsButton () {
+        backToProductsButton.click();
     }
 
     public boolean isAddToCartButtonClickable () {

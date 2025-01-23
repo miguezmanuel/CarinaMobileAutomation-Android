@@ -8,7 +8,7 @@ import org.openqa.selenium.support.FindBy;
 
 public class SwagLabsLoginPage extends SwagLabsBasePage {
 
-    @FindBy(xpath = "//*[@class='login_logo']")
+    @FindBy(xpath = "//body/div[1]")
     public ExtendedWebElement titleText;
 
     public SwagLabsLoginPage(WebDriver driver) {
@@ -16,7 +16,7 @@ public class SwagLabsLoginPage extends SwagLabsBasePage {
     }
 
     public boolean isTitlePresent () {
-        return titleText.isPresent();
+        return titleText.isVisible(2);
     }
 
     @Override

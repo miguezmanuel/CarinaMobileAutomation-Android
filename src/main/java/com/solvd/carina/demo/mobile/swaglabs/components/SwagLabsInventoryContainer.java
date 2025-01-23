@@ -6,6 +6,7 @@ import com.zebrunner.carina.webdriver.gui.AbstractUIObject;
 import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.core.Logger;
+import org.openqa.selenium.SearchContext;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 
@@ -33,7 +34,7 @@ public class SwagLabsInventoryContainer extends AbstractUIObject {
     @FindBy(xpath = "//div[@class='inventory_item_price']")
     private List<ExtendedWebElement> itemsPriceList;
 
-    public SwagLabsInventoryContainer(WebDriver driver) {
+    public SwagLabsInventoryContainer(WebDriver driver, SearchContext searchContext) {
         super(driver, searchContext);
     }
 
