@@ -7,8 +7,6 @@ import com.zebrunner.carina.utils.mobile.IMobileUtils;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-
-
 public class SampleTest implements IAbstractTest, IMobileUtils {
 
     @Test

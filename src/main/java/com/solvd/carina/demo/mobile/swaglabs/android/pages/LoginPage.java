@@ -15,13 +15,13 @@ import org.openqa.selenium.support.FindBy;
 public class LoginPage extends LoginPageBase {
 
     private static final Log LOGGER = LogFactory.getLog(LoginPage.class);
-    @FindBy(xpath= "//android.widget.EditText[@content-desc='test-Username']")
+    @FindBy(xpath= "//input[@name=\"user-name\"]")
     private ExtendedWebElement usernameField;
 
-    @FindBy(xpath= "//android.widget.EditText[@content-desc='test-Password']")
+    @FindBy(xpath= "//input[@name=\"password\"]")
     private ExtendedWebElement passwordField;
 
-    @FindBy(xpath =  "//android.view.ViewGroup[@content-desc='test-LOGIN']")
+    @FindBy(xpath =  "//input[@id=\"login-button\"]")
     private ExtendedWebElement loginButton;
 
     public LoginPage(WebDriver driver) {

@@ -12,7 +12,7 @@ import org.openqa.selenium.support.FindBy;
 @DeviceType(pageType = DeviceType.Type.ANDROID_PHONE, parentClass = HomePageBase.class)
 public class HomePage extends HomePageBase implements IMobileUtils {
     @FindBy(xpath = "//android.view.ViewGroup[@content-desc='test-Cart']")
-    private ExtendedWebElement loginButton;
+    private ExtendedWebElement cartButton;
     @FindBy(xpath = "//*[@content-desc='test-Menu']/..")
     private HeaderMenuComponent headerMenuComponent;
 
@@ -21,8 +21,8 @@ public class HomePage extends HomePageBase implements IMobileUtils {
     }
 
     @Override
-    public boolean isLoginButtonPresent() {
-        return loginButton.isElementPresent();
+    public boolean isCartButtonPresent() {
+        return cartButton.isElementPresent();
     }
 
     public HeaderMenuComponentBase getHeaderMenuComponent(){

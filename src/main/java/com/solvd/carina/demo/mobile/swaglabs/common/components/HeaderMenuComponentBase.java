@@ -15,5 +15,5 @@ public abstract class HeaderMenuComponentBase extends AbstractUIObject {
         super(driver, searchContext);
     }
 
-    public abstract LoginPageBase clickOnLoginButton();
+    public abstract LoginPageBase clickOnCartButton();
 }

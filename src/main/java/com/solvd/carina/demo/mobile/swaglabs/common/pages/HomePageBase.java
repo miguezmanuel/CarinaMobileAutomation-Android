@@ -12,7 +12,7 @@ public abstract class HomePageBase extends AbstractPage {
         setPageOpeningStrategy(PageOpeningStrategy.BY_ELEMENT);
     }
 
-    public abstract boolean isLoginButtonPresent();
+    public abstract boolean isCartButtonPresent();
 
     public abstract HeaderMenuComponentBase getHeaderMenuComponent();
 

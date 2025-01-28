@@ -14,14 +14,14 @@ public class HeaderMenuComponent extends HeaderMenuComponentBase implements ICus
     private ExtendedWebElement header;
 
     @FindBy(xpath = "//android.view.ViewGroup[@content-desc='test-Cart']")
-    private ExtendedWebElement loginButton;
+    private ExtendedWebElement cartButton;
 
     public HeaderMenuComponent(WebDriver driver, SearchContext searchContext) {
         super(driver, searchContext);
     }
 
     @Override
-    public LoginPageBase clickOnLoginButton() {
+    public LoginPageBase clickOnCartButton() {
         return initPage(getDriver(), LoginPageBase.class);
     }
 }
