@@ -13,7 +13,7 @@ Driver info: driver.version: unknown
 com.zebrunner.carina.webdriver.locator.ExtendedElementLocator.findElement(ExtendedElementLocator.java:157)
 org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
 jdk.proxy2/jdk.proxy2.$Proxy89.isDisplayed(Unknown Source)
-com.solvd.carina.demo.mobile.swaglabs.pages.SwagLabsLoginPage.isTitlePresent(SwagLabsLoginPage.java:19)
+com.solvd.carina.demo.mobile.swaglabs.pages.LoginPage.isTitlePresent(SwagLabsLoginPage.java:19)
 com.solvd.carina.demo.mobile.SwagLabsTest.loginTest(SwagLabsTest.java:30)
 java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 java.base/java.lang.reflect.Method.invoke(Method.java:580)

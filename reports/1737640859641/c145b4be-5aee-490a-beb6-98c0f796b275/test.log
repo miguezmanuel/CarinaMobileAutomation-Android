@@ -28,7 +28,7 @@ com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.doAction(ExtendedWeb
 com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.type(ExtendedWebElement.java:620)
 com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.type(ExtendedWebElement.java:609)
 com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.type(ExtendedWebElement.java:599)
-com.solvd.carina.demo.mobile.swaglabs.components.SwagLabsLoginForm.typeUsernameInputField(SwagLabsLoginForm.java:33)
+com.solvd.carina.demo.mobile.swaglabs.components.LoginForm.typeUsernameInputField(SwagLabsLoginForm.java:33)
 com.solvd.carina.demo.mobile.SwagLabsTest.loginTest(SwagLabsTest.java:34)
 java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 java.base/java.lang.reflect.Method.invoke(Method.java:580)
